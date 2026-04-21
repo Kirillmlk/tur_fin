@@ -228,6 +228,41 @@
         </article>
       </div>
     </section>
+    <h2 class="why-title">Почему выбирают нас</h2>
+    <p class="why-text">
+      Мы создаем проекты, которые можно строить без доработок — надежно, технологично и с гарантированным результатом.
+      Проектирование с нами — это уверенность в том, что здание будет работать десятилетиями.
+    </p>
+    <section class="why-cards">
+      <article class="why-card why-card--active">
+        <span class="why-card__num">01</span>
+        <h3 class="why-card__title">Соответствие нормам</h3>
+        <p class="why-card__text">
+          Работаем по действующим СНиП и СП, учитывая все требования и согласования на каждом этапе проектирования.
+        </p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__num">02</span>
+        <h3 class="why-card__title">Точность и экономика</h3>
+        <p class="why-card__text">
+          Обеспечиваем точные расчеты, рациональное использование материалов и оптимизацию бюджета без потери качества.
+        </p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__num">03</span>
+        <h3 class="why-card__title">Современные технологии</h3>
+        <p class="why-card__text">
+          Используем актуальные инженерные решения и BIM-проектирование для точного моделирования и контроля всех процессов.
+        </p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__num">04</span>
+        <h3 class="why-card__title">Полное сопровождение</h3>
+        <p class="why-card__text">
+          Ведем проект от концепции до ввода объекта в эксплуатацию, обеспечивая стабильный результат и качество на каждом этапе.
+        </p>
+      </article>
+    </section>
   </div>
 </template>
 
@@ -269,7 +304,7 @@ body {
   --page-scale: min(1, calc(100vw / 1920));
   position: relative;
   width: 1920px;
-  min-height: 2860px;
+  min-height: 3400px;
   margin: 0;
   transform: scale(var(--page-scale));
   transform-origin: top left;
@@ -706,6 +741,7 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #141724;
+  white-space: nowrap;
 }
 
 .service-intro__title--research {
@@ -975,5 +1011,113 @@ body {
   line-height: 150%;
   letter-spacing: -0.03em;
   color: #2d3442;
+}
+
+.why-title {
+  position: absolute;
+  top: 2916px;
+  left: 58px;
+  width: 588px;
+  height: 48px;
+  margin: 0;
+  opacity: 1;
+  transform: rotate(0deg) scaleX(0.9);
+  transform-origin: left center;
+  font-family: "Druk Cyr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #141724;
+}
+
+.why-text {
+  position: absolute;
+  top: 2996px;
+  left: 58px;
+  width: 980px;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  color: #141724;
+}
+
+.why-cards {
+  position: absolute;
+  top: 3104px;
+  left: 58px;
+  width: 1804px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.why-card {
+  width: 436px;
+  height: 300px;
+  opacity: 1;
+  transform: rotate(0deg);
+  background: #ffffff;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.why-card--active {
+  border: 2px solid #2f97cf;
+}
+
+.why-card__num {
+  display: block;
+  width: 24px;
+  height: 36px;
+  margin-bottom: 48px;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: "Druk Cyr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #5638fa;
+}
+
+.why-card__title {
+  width: 262px;
+  height: 36px;
+  margin: 0 0 24px;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: "Druk Cyr", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #141724;
+  white-space: nowrap;
+}
+
+.why-card__text {
+  width: 349px;
+  height: 72px;
+  margin: 0;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  color: #141724;
 }
 </style>
