@@ -189,6 +189,45 @@
         </div>
       </div>
     </section>
+    <h2 class="team-title">Команда под проект</h2>
+    <section class="team-block">
+      <div class="team-grid">
+        <article class="team-member">
+          <img :src="teamImg1" alt="Павел" class="team-member__photo" />
+          <span class="team-member__role">Главный инженер</span>
+          <h3 class="team-member__name">Павел</h3>
+          <p class="team-member__desc">Отвечает за согласованность всех разделов</p>
+        </article>
+
+        <article class="team-member">
+          <img :src="teamImg2" alt="Алина" class="team-member__photo" />
+          <span class="team-member__role">Конструктор</span>
+          <h3 class="team-member__name">Алина</h3>
+          <p class="team-member__desc">Проектирует надежные и безопасные несущие системы</p>
+        </article>
+
+        <article class="team-member">
+          <img :src="teamImg3" alt="Иван" class="team-member__photo" />
+          <span class="team-member__role">Инженер</span>
+          <h3 class="team-member__name">Иван</h3>
+          <p class="team-member__desc">Разрабатывает коммуникации и инженерные решения</p>
+        </article>
+
+        <article class="team-member">
+          <img :src="teamImg4" alt="Антон" class="team-member__photo" />
+          <span class="team-member__role">Менеджер проекта</span>
+          <h3 class="team-member__name">Антон</h3>
+          <p class="team-member__desc">Координирует процессы и контролирует сроки</p>
+        </article>
+
+        <article class="team-member">
+          <img :src="teamImg5" alt="Семен" class="team-member__photo" />
+          <span class="team-member__role">Технический надзор</span>
+          <h3 class="team-member__name">Семен</h3>
+          <p class="team-member__desc">Следит за соответствием проекта и качества исполнения</p>
+        </article>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -200,6 +239,11 @@ import frameIcon from "./assets/images/frame.png";
 import maxIcon from "./assets/images/Max_logo_2025 1.png";
 import mailIcon from "./assets/images/mail.png";
 import mainImage from "./assets/images/main.jpg";
+import teamImg1 from "./assets/images/img1.png";
+import teamImg2 from "./assets/images/img2.png";
+import teamImg3 from "./assets/images/img3.png";
+import teamImg4 from "./assets/images/img4.png";
+import teamImg5 from "./assets/images/img5.png";
 </script>
 
 <style>
@@ -217,7 +261,7 @@ body {
 
 body {
   margin: 0;
-  background: #eff1f4;
+  background: #d7d9de;
   overflow-x: hidden;
 }
 
@@ -225,7 +269,7 @@ body {
   --page-scale: min(1, calc(100vw / 1920));
   position: relative;
   width: 1920px;
-  min-height: 2200px;
+  min-height: 2860px;
   margin: 0;
   transform: scale(var(--page-scale));
   transform-origin: top left;
@@ -566,7 +610,7 @@ body {
   font-style: normal;
   font-size: 65px;
   line-height: 100%;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -588,6 +632,10 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.05em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
 }
 
 .hero-image {
@@ -619,7 +667,7 @@ body {
   height: 1428px;
   opacity: 1;
   transform: rotate(0deg);
-  background: #eff1f4;
+  background: #d7d9de;
   box-sizing: border-box;
   padding: 18px 0;
   display: grid;
@@ -644,7 +692,6 @@ body {
 }
 
 .service-intro {
-  padding: 26px 12px 0 0;
 }
 
 .service-intro--offset {
@@ -695,6 +742,10 @@ body {
   color: #141724;
   overflow-wrap: anywhere;
   word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .service-intro__text--research {
@@ -766,6 +817,10 @@ body {
   color: #1b2231;
   overflow-wrap: anywhere;
   word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .service-result {
@@ -809,5 +864,116 @@ body {
   color: #1c242e;
   overflow-wrap: anywhere;
   word-break: break-word;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.team-title {
+  position: absolute;
+  top: 2258px;
+  left: 58px;
+  width: 588px;
+  height: 48px;
+  margin: 0;
+  opacity: 1;
+  transform: rotate(0deg) scaleX(0.9);
+  font-family: "Druk Cyr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #141724;
+  white-space: nowrap;
+  transform-origin: left center;
+}
+
+.team-block {
+  position: absolute;
+  top: 2366px;
+  left: 58px;
+  width: 1804px;
+  height: 450px;
+  opacity: 1;
+  transform: rotate(0deg);
+  display: grid;
+  gap: 96px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 96px;
+}
+
+.team-member {
+  width: 284px;
+  height: 450px;
+  background: #f3f4f6;
+  padding: 0 24px 30px;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.team-member__photo {
+  width: 284px;
+  height: 249px;
+  margin: 0 -24px 0;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.team-member__role {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  height: 31px;
+  margin-top: 32px;
+  opacity: 1;
+  transform: rotate(0deg);
+  background: #96ce06;
+  color: #141724;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -0.05em;
+  padding: 6px 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.team-member__name {
+  margin: 0 0 16px;
+  width: 59px;
+  height: 24px;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.05em;
+  color: #141724;
+}
+
+.team-member__desc {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #2d3442;
 }
 </style>
