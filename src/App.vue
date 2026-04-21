@@ -113,7 +113,7 @@
         </div>
         <div class="service-intro service-intro--offset">
           <h2>Проектирование</h2>
-          <p>
+          <p class="service-intro__text--research">
             На этом этапе мы превращаем концепцию в рабочую документацию, по которой можно строить без доработок и
             уточнений. Мы разрабатываем проекты жилых, общественных и коммерческих зданий, а также инженерные системы
             любой сложности.
@@ -121,10 +121,10 @@
         </div>
       </div>
 
-      <div class="service-row">
-        <div class="service-intro">
+      <div class="service-row service-row--management">
+        <div class="service-intro service-intro--offset">
           <h2>Управление строительством</h2>
-          <p>
+          <p class="service-intro__text--research">
             Управление строительством — это комплексное сопровождение проекта от начала до ввода объекта в эксплуатацию.
             Мы берем на себя организацию всех процессов.
           </p>
@@ -180,9 +180,9 @@
             <span>Объект построен точно по проекту и с гарантированным качеством</span>
           </div>
         </div>
-        <div class="service-intro">
+        <div class="service-intro service-intro--offset">
           <h2>Технический надзор</h2>
-          <p>
+          <p class="service-intro__text--research">
             Мы контролируем каждый этап реализации проекта, чтобы все выполнялось строго по чертежам и нормативам.
             Наши специалисты регулярно выезжают на объект, проверяют качество работ, материалов и технологий.
           </p>
@@ -210,14 +210,26 @@ import mainImage from "./assets/images/main.jpg";
   font-style: normal;
 }
 
+html,
+body {
+  width: 100%;
+}
+
 body {
   margin: 0;
   background: #eff1f4;
+  overflow-x: hidden;
 }
 
 .page {
+  --page-scale: min(1, calc(100vw / 1920));
   position: relative;
   width: 1920px;
+  min-height: 2200px;
+  margin: 0;
+  transform: scale(var(--page-scale));
+  transform-origin: top left;
+  overflow: hidden;
 }
 
 .navbar {
@@ -617,13 +629,18 @@ body {
 .service-row {
   position: relative;
   display: grid;
-  grid-template-columns: 330px 1fr;
+  grid-template-columns: 530px 1fr;
   gap: 16px;
   padding: 0 0 8px;
 }
 
 .service-row--reverse {
-  grid-template-columns: 1fr 330px;
+  grid-template-columns: 1fr 530px;
+}
+
+.service-row--management {
+  grid-template-columns: 530px 1196px;
+  justify-content: space-between;
 }
 
 .service-intro {
@@ -641,7 +658,7 @@ body {
   line-height: 1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #101625;
+  color: #141724;
 }
 
 .service-intro__title--research {
@@ -662,18 +679,10 @@ body {
 }
 
 .service-intro p {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-size: 14px;
-  line-height: 139%;
-  letter-spacing: -0.03em;
-  color: #222833;
-}
-
-.service-intro__text--research {
   position: static;
-  width: 480px;
-  height: 72px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin-top: 32px;
   opacity: 1;
   transform: rotate(0deg);
@@ -684,19 +693,33 @@ body {
   line-height: 150%;
   letter-spacing: -0.05em;
   color: #141724;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.service-intro__text--research {
+  margin-top: 32px;
+  width: 480px;
+  height: 72px;
+  max-width: 100%;
 }
 
 .service-content {
-  padding-right: 2px;
+  width: 1196px;
+  padding-right: 0;
+  box-sizing: border-box;
 }
 
 .service-content--right {
+  justify-self: end;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .service-content--left {
+  justify-self: start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -741,6 +764,8 @@ body {
   line-height: 130%;
   letter-spacing: -0.02em;
   color: #1b2231;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .service-result {
@@ -758,18 +783,31 @@ body {
 }
 
 .service-result strong {
+  width: 236px;
+  height: 48px;
+  opacity: 1;
+  transform: rotate(0deg);
   font-family: "Druk Cyr", sans-serif;
-  font-size: 40px;
-  line-height: 1;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #101625;
   white-space: nowrap;
 }
 
 .service-result span {
+  width: 369px;
+  height: 38px;
+  max-width: 100%;
   font-family: Inter, sans-serif;
   font-size: 14px;
   line-height: 130%;
   letter-spacing: -0.02em;
   color: #1c242e;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 </style>
