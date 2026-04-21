@@ -19,9 +19,7 @@
 
       <div class="navbar__bottom">
         <div class="logo">
-          <img :src="colorIcon" alt="Color" class="logo__color" />
-          <span class="logo__paint">КРАСКИ</span>
-          <span class="logo__repair">РЕМОНТА</span>
+          <img :src="mainLogo" alt="Main logo" class="logo__main" />
         </div>
 
         <nav class="menu">
@@ -263,22 +261,197 @@
         </p>
       </article>
     </section>
+    <section class="next-large-block">
+      <footer class="mega-footer">
+        <div class="mega-footer__top">
+          <div class="mega-footer__brand">
+            <img :src="kraskiLogo" alt="Краски Ремонта" class="mega-footer__brand-logo" />
+          </div>
+          <div class="mega-footer__contacts">
+            <span class="mega-footer__address">
+              <img :src="footerAddressIcon" alt="" class="mega-footer__address-icon" />
+              <span class="mega-footer__address-text">г. Москва, Скандинавский бульвар, д. 3, к.</span>
+            </span>
+            <span class="mega-footer__email">
+              <img :src="footerEmailIcon" alt="" class="mega-footer__address-icon" />
+              <span>welcome@kraskiremonta.ru</span>
+            </span>
+            <span class="mega-footer__phone">8 993 272 17 71</span>
+            <span class="mega-footer__max">
+              <img :src="footerMaxIcon" alt="MAX" class="mega-footer__address-icon" />
+              <span class="mega-footer__max-text">MAX</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="mega-footer__links mega-footer__links--main">
+          <div class="mega-footer__col">
+            <h4>Компания</h4>
+            <a href="#">О нас</a>
+            <a href="#">Социальная ответственность</a>
+            <a href="#">Карьера</a>
+            <a href="#">Партнерам</a>
+            <a href="#">Юридическое сопровождение</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакты</a>
+          </div>
+
+          <div class="mega-footer__col">
+            <h4>Ремонт жилых помещений</h4>
+            <a href="#">Квартиры,</a>
+            <a href="#">Коттеджи</a>
+            <a href="#">Таунхаусы</a>
+            <a href="#">Загородный дом</a>
+            <a href="#">Этапы работ</a>
+            <a href="#">Контроль за ремонтом</a>
+            <a href="#">Гарантия и страхование ремонта</a>
+          </div>
+
+          <div class="mega-footer__col">
+            <h4>Ремонт коммерческих помещений</h4>
+            <a href="#">Офисы</a>
+            <a href="#">Отели</a>
+            <a href="#">Магазины</a>
+            <a href="#">Фитнес-центры</a>
+            <a href="#">Склады</a>
+            <a href="#">Салоны красоты</a>
+            <a href="#">Рестораны и кафе</a>
+            <a href="#">Медицинские центры</a>
+          </div>
+
+          <div class="mega-footer__col">
+            <h4>Дизайн</h4>
+            <a href="#">Архитектура и дизайн</a>
+            <a href="#">Жилые интерьеры</a>
+            <a href="#">Интерьеры для бизнеса</a>
+            <a href="#">Авторские надзоры</a>
+            <a href="#">Подбор материалов</a>
+            <a href="#">Меблировка и комплектация</a>
+          </div>
+        </div>
+
+        <div class="mega-footer__links mega-footer__links--second">
+          <div class="mega-footer__col">
+            <h4>Проектирование и инженерия</h4>
+            <a href="#">Инженерные проекты</a>
+            <a href="#">Управление строительством</a>
+            <a href="#">Промышленное проектирование</a>
+            <a href="#">Обследование зданий</a>
+            <a href="#">Команда под проект</a>
+            <a href="#">Технический надзор</a>
+          </div>
+
+          <div class="mega-footer__col">
+            <h4>Стоимость</h4>
+            <a href="#">Ремонт под ключ</a>
+            <a href="#">Архитектура и дизайн</a>
+            <a href="#">Проектирование и инженерия</a>
+            <a href="#">Прайс лист</a>
+          </div>
+
+          <div class="mega-footer__col">
+            <h4>Портфолио</h4>
+            <a href="#">Фотографии жилого интерьера</a>
+            <a href="#">Фотографии коммерческого интерьера</a>
+            <a href="#">Видео-обзоры объектов</a>
+          </div>
+
+          <div class="mega-footer__cabinet">
+            <img :src="footerLkIcon" alt="" class="mega-footer__lk-icon" />
+            <span>Личный кабинет</span>
+          </div>
+        </div>
+
+        <div class="mega-footer__bottom">
+          <div class="mega-footer__bottom-row">
+            <span>© 2004-2025 «Краски Ремонта»</span>
+            <span>Правила организации выполнения работ по ремонту</span>
+            <span></span>
+            <span>ООО «ДОМЕО МАРКЕТИНГ»<br />ИНН 9704067054<br />ОГРН 1217700244717</span>
+          </div>
+          <div class="mega-footer__bottom-row mega-footer__bottom-row--links">
+            <span>Публичная оферта</span>
+            <span>«Покупка со сбером» в кредит</span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="mega-footer__bottom-row mega-footer__bottom-row--links">
+            <span>Политика конфиденциальности</span>
+            <span>Оплата</span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="mega-footer__bottom-row mega-footer__bottom-row--links">
+            <span>Правовая информация</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="mega-footer__legal-text">
+          <p>
+            Обработка персональных данных Пользователя осуществляется в соответствии с законодательством Российской Федерации.
+            Администрация Сайта обрабатывает персональные данные Пользователя в целях осуществления обратной связи. Заполняя форму
+            "Фамилия, Имя, Отчество", "Электронная почта", "Телефон", "Город" и иные сведения, Пользователь дает согласие на
+            обработку своих персональных данных - имени, адреса электронной почты и телефона. Под обработкой персональных данных
+            понимается сбор, систематизация, накопление, уточнение (обновление, изменение).
+          </p>
+          <p>
+            Вся информация, размещенная на данном сайте, включая стоимости товаров и (или) услуг, ни при каких условиях не является
+            офертой, публичной офертой, договором и публичным договором определяемыми положениями статьей 426, 435 и 437 и 494 ГК РФ
+            или заверениями об обязательствах. Любая информация, представленная на данном сайте, носит исключительно информационный
+            характер. Информация о технологиях и иных качественных характеристиках услуг, указанных на сайте, может быть изменена
+            производителем без предварительного уведомления. Фактические характеристики, цена, внешний вид товара или услуги могут
+            отличаться от тех, что были указаны на любой странице сайта в момент оформления заказа, заявки или подписания договора с
+            компанией. Все материалы и информация, размещенные на данном веб-ресурсе, представлены исключительно в информационных
+            целях. Веб-ресурс не несет ответственности за достоверность, полноту или актуальность представленной информации. Информация,
+            размещенная на веб-ресурсе, не может служить как юридическое доказательство или как основание для подачи судебных исков.
+            Полные условия сотрудничества вы можете найти в договоре, который заключили с компанией. Для получения подробной информации,
+            пожалуйста, свяжитесь с менеджерами компании, по указанным на сайте телефонам или через формы обратной связи. Вы можете
+            ознакомиться с <span class="mega-footer__legal-link">политикой правил работы сайта</span>.
+          </p>
+          <p>
+            Администрация сайта обязуется сохранять Вашу конфиденциальность в сети Интернет.
+            <span class="mega-footer__legal-link">Политика Конфиденциальности</span> компании рассказывает о том, как собираются,
+            обрабатываются и хранятся Ваши личные данные. Администрация уделяет большое внимание защите личной информации пользователей.
+            Пользуясь сайтом <span class="mega-footer__legal-link">domeo.ru</span>, пользователь тем самым дает согласие на применение
+            правил сбора и использования данных, изложенных в настоящем документе. Если Вы не согласны с условиями нашей
+            <span class="mega-footer__legal-link">политики конфиденциальности</span>, не используйте сайт
+            <span class="mega-footer__legal-link">domeo.ru</span>.
+          </p>
+          <p>
+            1. Под "идеальным" понимается результат, тождественный ожиданиям клиента, воспроизведенный 1:1 по выбранному эталонному
+            образцу и подтвержденный договорными обязательствами;
+          </p>
+          <p>
+            2. Согласно исследованию рынка оказания услуг по капитальному ремонту и дизайну помещений, проведенного исследовательской
+            компанией Конкол (ИНН 9701073853) в 2025 год.
+          </p>
+        </div>
+      </footer>
+    </section>
   </div>
 </template>
 
 <script setup>
 import arrowIcon from "./assets/images/arrow.png";
 import clockIcon from "./assets/images/clock.png";
-import colorIcon from "./assets/images/color.png";
 import frameIcon from "./assets/images/frame.png";
 import maxIcon from "./assets/images/Max_logo_2025 1.png";
 import mailIcon from "./assets/images/mail.png";
 import mainImage from "./assets/images/main.jpg";
+import mainLogo from "./assets/images/main_logo.png";
 import teamImg1 from "./assets/images/img1.png";
 import teamImg2 from "./assets/images/img2.png";
 import teamImg3 from "./assets/images/img3.png";
 import teamImg4 from "./assets/images/img4.png";
 import teamImg5 from "./assets/images/img5.png";
+import kraskiLogo from "./assets/images/kraski.png";
+import footerAddressIcon from "./assets/images/Frame (2).png";
+import footerEmailIcon from "./assets/images/Frame (3).png";
+import footerMaxIcon from "./assets/images/Max_logo_2025 1 (1).png";
+import footerLkIcon from "./assets/images/lk.png";
 </script>
 
 <style>
@@ -304,7 +477,7 @@ body {
   --page-scale: min(1, calc(100vw / 1920));
   position: relative;
   width: 1920px;
-  min-height: 3400px;
+  min-height: 4944px;
   margin: 0;
   transform: scale(var(--page-scale));
   transform-origin: top left;
@@ -499,6 +672,12 @@ body {
 .logo__repair {
   color: #f3f3f3;
   font-size: 14px;
+}
+
+.logo__main {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .menu {
@@ -1119,5 +1298,263 @@ body {
   line-height: 150%;
   letter-spacing: -0.05em;
   color: #141724;
+}
+
+.next-large-block {
+  position: absolute;
+  top: 3504px;
+  left: 0;
+  width: 1920px;
+  height: 1440px;
+  opacity: 1;
+  transform: rotate(0deg);
+  background: #ffffff;
+}
+
+.mega-footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: #1a1f2c;
+  font-family: Inter, sans-serif;
+}
+
+.mega-footer__top {
+  position: absolute;
+  top: 100.7px;
+  left: 322px;
+  width: 1295px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  transform: rotate(0deg);
+  flex-wrap: nowrap;
+}
+
+.mega-footer__brand {
+  position: relative;
+  width: 262.8213195800781px;
+  height: 50.1803092956543px;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.mega-footer__brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mega-footer__contacts {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.mega-footer__address {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 9px;
+}
+
+.mega-footer__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 31px;
+}
+
+.mega-footer__max {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 32px;
+}
+
+.mega-footer__max-text {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+}
+
+.mega-footer__address-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+.mega-footer__address-text {
+  display: inline-block;
+  width: 305px;
+  height: 22px;
+  opacity: 1;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+}
+
+.mega-footer__phone {
+  display: inline-block;
+  width: 111px;
+  height: 22px;
+  opacity: 1;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+}
+
+.mega-footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.2fr 1fr;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.mega-footer__links--main {
+  position: absolute;
+  top: 211px;
+  left: 322px;
+  width: 1295px;
+  height: 332px;
+  opacity: 1;
+  transform: rotate(0deg);
+  gap: 93px;
+}
+
+.mega-footer__links--second {
+  position: absolute;
+  top: 563px;
+  left: 322px;
+  width: 1295px;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 93px;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.mega-footer__col h4 {
+  margin: 0 0 12px;
+  width: 94px;
+  height: 28px;
+  opacity: 1;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  color: #141724;
+}
+
+.mega-footer__col a {
+  display: block;
+  width: 221px;
+  height: 22px;
+  opacity: 1;
+  color: #1a1f2c;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+  margin-bottom: 16px;
+}
+
+.mega-footer__cabinet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-top: 10px;
+}
+
+.mega-footer__cabinet span {
+  font-size: 22px;
+  font-family: "Druk Cyr", sans-serif;
+}
+
+.mega-footer__lk-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
+.mega-footer__bottom {
+  position: absolute;
+  top: 978px;
+  left: 322px;
+  width: 1295px;
+  margin: 0;
+  font-size: 12px;
+  color: #6a6f79;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+}
+
+.mega-footer__bottom-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 0;
+}
+
+.mega-footer__bottom-row--links span {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-underline-offset: 0%;
+}
+
+.mega-footer__legal-text {
+  position: absolute;
+  top: 1158px;
+  left: 322px;
+  width: 1307px;
+  height: 306px;
+  opacity: 0.5;
+  transform: rotate(0deg);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: -0.05em;
+  color: #6a6f79;
+  overflow: hidden;
+}
+
+.mega-footer__legal-text p {
+  margin: 0 0 10px;
+}
+
+.mega-footer__legal-link {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-underline-offset: 0%;
+  text-decoration-skip-ink: auto;
 }
 </style>
