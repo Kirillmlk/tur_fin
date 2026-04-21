@@ -1,0 +1,31 @@
+{
+  "name": "tur_fin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Single-page Vue 3 demo with SCSS",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kirillmlk/tur_fin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kirillmlk/tur_fin/issues"
+  },
+  "homepage": "https://github.com/Kirillmlk/tur_fin#readme",
+  "dependencies": {
+    "vue": "^3.5.32"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "sass": "^1.99.0",
+    "vite": "^5.4.21"
+  }
+}

@@ -1,0 +1,130 @@
+$bg: #0f172a;
+$surface: #111827;
+$text: #e5e7eb;
+$muted: #94a3b8;
+$accent: #22d3ee;
+$accent-dark: #0891b2;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  color: $text;
+  background: radial-gradient(circle at top, #1e293b 0%, $bg 50%);
+  min-height: 100vh;
+}
+
+.page {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  &__label {
+    margin: 0 0 0.5rem;
+    color: $accent;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  &__subtitle {
+    margin: 0.75rem auto 0;
+    max-width: 58ch;
+    color: $muted;
+  }
+}
+
+.planner {
+  display: grid;
+  place-items: center;
+
+  &__card {
+    width: min(100%, 620px);
+    background: rgba($surface, 0.85);
+    border: 1px solid rgba($accent, 0.25);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+  }
+
+  &__text {
+    margin: 0 0 1rem;
+    color: $muted;
+  }
+
+  &__form {
+    display: grid;
+    gap: 0.9rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__result {
+    margin-top: 1rem;
+    border-top: 1px solid rgba($muted, 0.35);
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+
+    strong {
+      color: $accent;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+
+  &__label {
+    color: $muted;
+    font-size: 0.9rem;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid rgba($accent-dark, 0.7);
+    background: rgba(15, 23, 42, 0.95);
+    color: $text;
+    border-radius: 0.7rem;
+    padding: 0.7rem 0.8rem;
+    outline: none;
+
+    &:focus {
+      border-color: $accent;
+      box-shadow: 0 0 0 2px rgba($accent, 0.25);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .planner__form {
+    grid-template-columns: 1fr;
+  }
+
+  .planner__result {
+    font-size: 1rem;
+  }
+}
