@@ -41,7 +41,7 @@
         </div>
       </div>
     </header>
-    <p class="breadcrumbs"><span class="breadcrumbs__muted">Главная</span> / <span>Проектирование и инженерия</span></p>
+    <p class="breadcrumbs"><span class="breadcrumbs__muted">Главная / </span><span>Проектирование и инженерия</span></p>
     <h1 class="hero-title">Проектирование и инженерия</h1>
     <p class="hero-description">
       Надежное проектирование  —  это основа безопасного и долговечного строительства. Мы выполняем полный цикл
@@ -51,6 +51,144 @@
     </p>
     <img :src="mainImage" alt="Main image" class="hero-image" />
     <div class="hero-overlay"></div>
+    <section class="next-block">
+      <div class="service-row">
+        <div class="service-intro service-intro--offset">
+          <h2 class="service-intro__title--research">Исследование зданий</h2>
+          <p class="service-intro__text--research">
+            Перед началом любого проектирования мы проводим тщательное обследование объекта. Это позволяет определить
+            текущее состояние конструкций и избежать ошибок при разработке.
+          </p>
+        </div>
+        <div class="service-content service-content--right">
+          <div class="service-cards">
+            <article class="service-card">
+              <h3>01</h3>
+              <p>Инструментальное обследование несущих элементов</p>
+            </article>
+            <article class="service-card">
+              <h3>02</h3>
+              <p>Диагностика инженерных систем и коммуникаций</p>
+            </article>
+            <article class="service-card">
+              <h3>03</h3>
+              <p>Анализ технического состояния и деформаций</p>
+            </article>
+            <article class="service-card">
+              <h3>04</h3>
+              <p>Подготовка отчета с рекомендациями по усилению или замене конструкций</p>
+            </article>
+          </div>
+          <div class="service-result">
+            <strong>📍 РЕЗУЛЬТАТ</strong>
+            <span>Точное понимание потенциала здания и отсутствие сюрпризов на этапе стройки</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-row service-row--reverse">
+        <div class="service-content service-content--left">
+          <div class="service-cards">
+            <article class="service-card">
+              <h3>01</h3>
+              <p>Архитектурные решения и визуализации фасадов</p>
+            </article>
+            <article class="service-card">
+              <h3>02</h3>
+              <p>Конструктивные схемы и расчеты нагрузок</p>
+            </article>
+            <article class="service-card">
+              <h3>03</h3>
+              <p>Электрика, отопление, вентиляция, водоснабжение, канализация</p>
+            </article>
+            <article class="service-card">
+              <h3>04</h3>
+              <p>3D и BIM-моделирование для точного планирования и смет</p>
+            </article>
+          </div>
+          <div class="service-result">
+            <strong>📍 РЕЗУЛЬТАТ</strong>
+            <span>Полный комплект документов, который позволяет вести строительство без задержек и изменений</span>
+          </div>
+        </div>
+        <div class="service-intro service-intro--offset">
+          <h2>Проектирование</h2>
+          <p>
+            На этом этапе мы превращаем концепцию в рабочую документацию, по которой можно строить без доработок и
+            уточнений. Мы разрабатываем проекты жилых, общественных и коммерческих зданий, а также инженерные системы
+            любой сложности.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-intro">
+          <h2>Управление строительством</h2>
+          <p>
+            Управление строительством — это комплексное сопровождение проекта от начала до ввода объекта в эксплуатацию.
+            Мы берем на себя организацию всех процессов.
+          </p>
+        </div>
+        <div class="service-content service-content--right">
+          <div class="service-cards">
+            <article class="service-card">
+              <h3>01</h3>
+              <p>Координация подрядчиков и поставщиков</p>
+            </article>
+            <article class="service-card">
+              <h3>02</h3>
+              <p>Контроль сроков и качества</p>
+            </article>
+            <article class="service-card">
+              <h3>03</h3>
+              <p>Ведение графиков, отчетов и бюджетов</p>
+            </article>
+            <article class="service-card">
+              <h3>04</h3>
+              <p>Оперативное решение технических вопросов</p>
+            </article>
+          </div>
+          <div class="service-result">
+            <strong>📍 РЕЗУЛЬТАТ</strong>
+            <span>Строительство без хаоса, перерасходов и переделок</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-row service-row--reverse">
+        <div class="service-content">
+          <div class="service-cards">
+            <article class="service-card">
+              <h3>01</h3>
+              <p>Проверка соответствия строительных работ проекту</p>
+            </article>
+            <article class="service-card">
+              <h3>02</h3>
+              <p>Контроль смет, актов и материалов</p>
+            </article>
+            <article class="service-card">
+              <h3>03</h3>
+              <p>Приемка скрытых работ</p>
+            </article>
+            <article class="service-card">
+              <h3>04</h3>
+              <p>Фотоотчеты и акты по каждому визиту</p>
+            </article>
+          </div>
+          <div class="service-result">
+            <strong>📍 РЕЗУЛЬТАТ</strong>
+            <span>Объект построен точно по проекту и с гарантированным качеством</span>
+          </div>
+        </div>
+        <div class="service-intro">
+          <h2>Технический надзор</h2>
+          <p>
+            Мы контролируем каждый этап реализации проекта, чтобы все выполнялось строго по чертежам и нормативам.
+            Наши специалисты регулярно выезжают на объект, проверяют качество работ, материалов и технологий.
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -65,8 +203,16 @@ import mainImage from "./assets/images/main.jpg";
 </script>
 
 <style>
+@font-face {
+  font-family: "Druk Cyr";
+  src: local("Druk Cyr"), local("Druk Cyr Bold"), local("DrukCyr-Bold");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   margin: 0;
+  background: #eff1f4;
 }
 
 .page {
@@ -287,7 +433,6 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 2px;
 }
 
@@ -388,6 +533,7 @@ body {
 
 .breadcrumbs span.breadcrumbs__muted {
   color: rgba(255, 255, 255, 0.7);
+  margin-right: 6px;
 }
 
 .hero-title {
@@ -451,5 +597,179 @@ body {
   height: 630px;
   background: linear-gradient(265.33deg, rgba(20, 23, 36, 0) 40.42%, rgba(20, 23, 36, 0.6) 68.67%);
   pointer-events: none;
+}
+
+.next-block {
+  position: absolute;
+  top: 730px;
+  left: 58px;
+  width: 1804px;
+  height: 1428px;
+  opacity: 1;
+  transform: rotate(0deg);
+  background: #eff1f4;
+  box-sizing: border-box;
+  padding: 18px 0;
+  display: grid;
+  gap: 16px;
+}
+
+.service-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 16px;
+  padding: 0 0 8px;
+}
+
+.service-row--reverse {
+  grid-template-columns: 1fr 330px;
+}
+
+.service-intro {
+  padding: 26px 12px 0 0;
+}
+
+.service-intro--offset {
+  margin-top: 88px;
+}
+
+.service-intro h2 {
+  margin: 0 0 12px;
+  font-family: "Druk Cyr", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #101625;
+}
+
+.service-intro__title--research {
+  position: static;
+  width: 100%;
+  height: auto;
+  margin: 0 0 16px;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: "Druk Cyr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.service-intro p {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 139%;
+  letter-spacing: -0.03em;
+  color: #222833;
+}
+
+.service-intro__text--research {
+  position: static;
+  width: 480px;
+  height: 72px;
+  margin-top: 32px;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.05em;
+  color: #141724;
+}
+
+.service-content {
+  padding-right: 2px;
+}
+
+.service-content--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.service-content--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-cards {
+  width: 1196px;
+  display: grid;
+  grid-template-columns: repeat(4, 284px);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.service-card {
+  width: 284px;
+  height: 146px;
+  background: #f7f8fa;
+  padding: 12px 14px;
+  box-sizing: border-box;
+}
+
+.service-card h3 {
+  margin: 0 0 8px;
+  width: 24px;
+  height: 36px;
+  opacity: 1;
+  transform: rotate(0deg);
+  font-family: "Druk Cyr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #5f3df2;
+}
+
+.service-card p {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #1b2231;
+}
+
+.service-result {
+  margin-top: 10px;
+  width: 1196px;
+  height: 116px;
+  opacity: 1;
+  transform: rotate(0deg);
+  background: #96ce06;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+}
+
+.service-result strong {
+  font-family: "Druk Cyr", sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  color: #101625;
+  white-space: nowrap;
+}
+
+.service-result span {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #1c242e;
 }
 </style>
