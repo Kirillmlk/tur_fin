@@ -28,27 +28,8 @@ npm run dev
 npm run build
 npm run preview
 ```
+## Скриншоты
 
-## Куда добавлять картинки для README
-
-Чтобы изображения отображались в `README.md`, положи их в папку:
-
-- `docs/images`
-
-Пример:
-
-- `docs/images/preview-1.png`
-- `docs/images/preview-2.png`
-
-И вставляй в `README.md` так:
-
-```md
 ![Главный экран](./docs/images/preview-1.png)
-![Футер](./docs/images/preview-2.png)
-```
+![Главная](./docs/images/preview-2.png)
 
-Важно:
-
-- используй относительные пути от корня репозитория;
-- не используй пробелы в именах файлов (лучше `kebab-case`);
-- после добавления новых изображений не забывай коммитить сами файлы картинок.
