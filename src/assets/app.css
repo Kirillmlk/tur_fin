@@ -1147,8 +1147,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .page {
     width: 100%;
+    max-width: 100%;
     min-height: auto;
     transform: none;
     overflow: visible;
@@ -1234,6 +1240,12 @@ body {
 
   .menu a {
     font-size: 13px;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .menu a span {
+    white-space: normal;
   }
 
   .menu__contacts {
