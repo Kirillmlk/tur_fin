@@ -1314,7 +1314,10 @@ body {
     letter-spacing: 0.01em;
     color: #141724;
     white-space: normal;
-    width: 100%;
+    width: calc(100% - 10px);
+    max-width: calc(100vw - 24px);
+    padding-right: 10px;
+    box-sizing: border-box;
     overflow: visible;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -1386,6 +1389,11 @@ body {
   .service-intro h2 {
     font-size: 30px;
     white-space: normal;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .service-intro p,
