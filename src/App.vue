@@ -29,6 +29,29 @@
           <a href="#"><span>Проектирование и инженерия</span><img :src="arrowIcon" alt="" class="menu__arrow" /></a>
           <a href="#"><span>Стоимость</span><img :src="arrowIcon" alt="" class="menu__arrow" /></a>
           <a href="#"><span>Портфолио</span><img :src="arrowIcon" alt="" class="menu__arrow" /></a>
+          <div class="menu__contacts">
+            <a href="#" @click.prevent="contactsMenuOpen = !contactsMenuOpen">
+              <span>Контакты</span><img :src="arrowIcon" alt="" class="menu__arrow" />
+            </a>
+            <div v-show="contactsMenuOpen" class="menu__contacts-dropdown">
+              <div class="menu__contacts-row">
+                <img :src="frameIcon" alt="Address" class="menu__contacts-icon" />
+                <span>г. Москва, Скандинавский бульвар, д. 3, к.</span>
+              </div>
+              <div class="menu__contacts-row">
+                <img :src="clockIcon" alt="Clock" class="menu__contacts-icon" />
+                <span>с 9:00 до 22:00, без выходных</span>
+              </div>
+              <div class="menu__contacts-row">
+                <img :src="mailIcon" alt="Mail" class="menu__contacts-icon" />
+                <span>welcome@kraskiremonta.ru</span>
+              </div>
+              <div class="menu__contacts-row">
+                <img :src="maxIcon" alt="Max" class="menu__contacts-icon" />
+                <span>MAX</span>
+              </div>
+            </div>
+          </div>
         </nav>
 
         <div class="actions">
@@ -435,6 +458,7 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import arrowIcon from "./assets/images/arrow.png";
 import clockIcon from "./assets/images/clock.png";
 import frameIcon from "./assets/images/frame.png";
@@ -452,4 +476,6 @@ import footerAddressIcon from "./assets/images/Frame (2).png";
 import footerEmailIcon from "./assets/images/Frame (3).png";
 import footerMaxIcon from "./assets/images/Max_logo_2025 1 (1).png";
 import footerLkIcon from "./assets/images/lk.png";
+
+const contactsMenuOpen = ref(false);
 </script>
