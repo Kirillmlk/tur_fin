@@ -736,8 +736,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  width: fit-content;
-  height: 31px;
+  width: max-content;
+  max-width: 100%;
+  min-height: 31px;
+  height: auto;
   margin-top: 32px;
   opacity: 1;
   transform: rotate(0deg);
@@ -752,6 +754,7 @@ body {
   padding: 6px 8px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .team-member__name {
@@ -1146,7 +1149,7 @@ body {
   text-decoration-skip-ink: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   html,
   body {
     overflow-x: hidden;
@@ -1225,7 +1228,7 @@ body {
   }
 
   .logo {
-    max-width: 180px;
+    max-width: 220px;
     grid-column: 1;
   }
 
@@ -1241,11 +1244,14 @@ body {
   .menu a {
     font-size: 13px;
     max-width: 100%;
-    white-space: normal;
+    white-space: nowrap;
+    min-height: auto;
+    padding: 4px 8px;
+    line-height: 1.2;
   }
 
   .menu a span {
-    white-space: normal;
+    white-space: nowrap;
   }
 
   .menu__contacts {
@@ -1422,6 +1428,15 @@ body {
     white-space: normal;
   }
 
+  .service-result span {
+    padding-left: 0;
+    overflow: visible;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    line-clamp: unset;
+  }
+
 
   .team-title,
   .why-title {
@@ -1460,7 +1475,21 @@ body {
   .why-card {
     width: auto;
     height: auto;
-    min-height: 220px;
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .why-card__num {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .why-card__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.1;
   }
 
   .why-card__title,
@@ -1468,6 +1497,11 @@ body {
     width: auto;
     height: auto;
     white-space: normal;
+  }
+
+  .why-card__text {
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   .next-large-block {
@@ -1487,24 +1521,46 @@ body {
     gap: 14px;
   }
 
+  .mega-footer__brand {
+    width: clamp(150px, 58vw, 262px);
+    height: auto;
+  }
+
+  .mega-footer__brand-logo {
+    width: 100%;
+    height: auto;
+  }
+
   .mega-footer__contacts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     white-space: normal;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .mega-footer__address,
   .mega-footer__email,
+  .mega-footer__phone,
   .mega-footer__max {
     margin: 0;
+    max-width: 100%;
   }
 
   .mega-footer__address-text {
     width: auto;
     height: auto;
     white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .mega-footer__email span {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   .mega-footer__links {
@@ -1549,5 +1605,190 @@ body {
     margin-top: 10px;
     opacity: 0.8;
     overflow: visible;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    padding: 8px 8px 10px;
+  }
+
+  .navbar__bottom {
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .logo {
+    max-width: 170px;
+  }
+
+  .mega-footer__brand {
+    width: clamp(130px, 52vw, 180px);
+  }
+
+  .actions {
+    gap: 6px;
+  }
+
+  .actions__phone {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .actions__login {
+    min-height: 30px;
+    padding: 6px 10px;
+  }
+
+  .actions__login-text {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .menu {
+    gap: 6px 8px;
+  }
+
+  .menu a {
+    font-size: 12px;
+    padding: 4px 8px;
+    min-height: auto;
+    line-height: 1.2;
+  }
+
+  .menu a span {
+    white-space: nowrap;
+  }
+
+  .menu__contacts-dropdown {
+    top: 78px;
+    width: calc(100vw - 16px);
+    padding: 10px;
+  }
+
+  .menu__contacts-row {
+    font-size: 13px;
+    gap: 8px;
+  }
+
+  .breadcrumbs,
+  .hero-title,
+  .hero-description {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .hero-image,
+  .hero-overlay {
+    height: 240px;
+  }
+
+  .next-block,
+  .team-block,
+  .why-cards,
+  .next-large-block,
+  .mega-footer__top,
+  .mega-footer__links--main,
+  .mega-footer__links--second,
+  .mega-footer__bottom,
+  .mega-footer__legal-text,
+  .team-title,
+  .why-title,
+  .why-text {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .service-intro h2,
+  .service-intro__title--research,
+  .team-title,
+  .why-title {
+    font-size: 26px;
+  }
+
+  .service-card {
+    min-height: 110px;
+    padding: 10px 12px;
+  }
+
+  .service-card h3 {
+    font-size: 30px;
+  }
+
+  .service-result {
+    padding: 8px 10px;
+  }
+
+  .team-member__photo {
+    height: 220px;
+  }
+
+  .why-card {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .why-card__num {
+    margin-bottom: 14px;
+    font-size: 24px;
+  }
+
+  .why-card__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .why-card__text {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .mega-footer__links--main,
+  .mega-footer__links--second {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-image,
+  .hero-overlay {
+    height: 420px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-member__photo {
+    width: calc(100% + 48px);
+    height: 320px;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .why-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-card {
+    width: auto;
+    min-height: 240px;
   }
 }
